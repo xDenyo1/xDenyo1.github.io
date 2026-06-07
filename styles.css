@@ -173,6 +173,25 @@ p {
     border: 1px solid var(--line);
 }
 
+.hobby-band {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.hobby-preview {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+    align-items: center;
+    gap: 24px;
+}
+
+.hobby-preview img {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+}
+
 .section {
     padding: 34px 0;
 }
@@ -430,6 +449,122 @@ button[type="reset"] {
     text-align: right;
 }
 
+.game-page {
+    background: #11131b;
+    color: #f8fafc;
+}
+
+.game-header {
+    background: rgba(17, 19, 27, 0.96);
+    border-bottom-color: #3d4455;
+}
+
+.game-header .brand,
+.game-header .nav-links a {
+    color: #f8fafc;
+}
+
+.game-header .nav-links a:hover {
+    background: #2b3140;
+}
+
+.game-hero {
+    min-height: 620px;
+    position: relative;
+    display: grid;
+    align-items: end;
+    overflow: hidden;
+    border-bottom: 1px solid #3d4455;
+}
+
+.game-hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(17, 19, 27, 0.94), rgba(17, 19, 27, 0.48), rgba(17, 19, 27, 0.2));
+}
+
+.game-hero-text {
+    position: relative;
+    z-index: 1;
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.game-hero-text h1 {
+    color: #ffffff;
+}
+
+.game-page .lead,
+.game-page .section-heading p,
+.game-page .card p {
+    color: #cbd5e1;
+}
+
+.game-page .card,
+.game-card {
+    background: #191f2b;
+    border-color: #394152;
+    box-shadow: none;
+}
+
+.game-page .table-wrap {
+    background: #191f2b;
+    border-color: #394152;
+}
+
+.game-page th {
+    color: #ffffff;
+    background: #7f1d1d;
+}
+
+.game-page td {
+    color: #dbe4f0;
+    border-bottom-color: #394152;
+}
+
+.feature-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.feature-strip div {
+    min-height: 120px;
+    padding: 18px;
+    border: 1px solid #394152;
+    border-radius: 8px;
+    background: #191f2b;
+}
+
+.feature-strip strong,
+.feature-strip span {
+    display: block;
+}
+
+.feature-strip strong {
+    margin-bottom: 8px;
+    color: #fbbf24;
+}
+
+.feature-strip span {
+    color: #cbd5e1;
+}
+
+.game-footer {
+    color: #cbd5e1;
+    border-top-color: #394152;
+}
+
 @media (max-width: 760px) {
     .nav {
         align-items: flex-start;
@@ -437,10 +572,20 @@ button[type="reset"] {
     }
 
     .hero,
+    .hobby-preview,
     .grid,
     .grid.two,
-    .assignment-list {
+    .assignment-list,
+    .feature-strip {
         grid-template-columns: 1fr;
+    }
+
+    .game-hero {
+        min-height: 560px;
+    }
+
+    .game-hero::after {
+        background: rgba(17, 19, 27, 0.74);
     }
 
     .section-heading {
