@@ -1,88 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmet Faruk Sever - Personal Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        h2 {
-            margin-top: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: #007BFF;
-            padding: 8px 15px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        a:hover {
-            background-color: #0056b3;
-        }
-
-        .section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="index.html">Ahmet Faruk Sever</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#homeworks">Homework</a>
+                <a href="#downloads">Downloads</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="section">
-        <h1>Welcome to My Website</h1>
+    <main class="page">
+        <section class="hero" id="about">
+            <div>
+                <p class="eyebrow">Software Engineering Student</p>
+                <h1>Ahmet Faruk Sever</h1>
+                <p class="lead">I am a Software Engineering student building a personal learning portfolio for ECC006 web development assignments.</p>
+                <div class="tag-row">
+                    <span class="tag">Student No: 20224411</span>
+                    <span class="tag teal">Software Engineering</span>
+                    <span class="tag amber">Web Development</span>
+                </div>
+                <div class="hero-actions">
+                    <a class="button" href="#homeworks">View Homework</a>
+                    <a class="button secondary" href="hw10.html">Latest Assignment</a>
+                </div>
+            </div>
+            <img class="hero-visual" src="assets/profile-visual.png" alt="Personal portfolio visual for Ahmet Faruk Sever">
+        </section>
 
-        <h2>About Me</h2>
-        <p>Hello, my name is <strong>Ahmet Faruk Sever</strong>. I am a student learning web development.</p>
-    </div>
+        <section class="section">
+            <div class="grid">
+                <article class="card">
+                    <h2>Profile</h2>
+                    <p>This website presents my course work, practice pages, and progress while learning HTML, CSS, forms, tables, responsive design, and web research.</p>
+                </article>
+                <article class="card">
+                    <h2>Focus</h2>
+                    <p>I am interested in software engineering, clean interfaces, problem solving, and building pages that are easy to read and use.</p>
+                </article>
+                <article class="card">
+                    <h2>Course Work</h2>
+                    <p>Homework pages are organized below so the instructor can quickly review each assignment and download the original files.</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Homework Pages</h2>
-        <ul>
-            <li><a href="hw1.html">#HW1</a></li>
-            <li><a href="hw2.html">#HW2 - Blog & Research</a></li>
-            <li><a href="hw3.html">#HW3</a></li>
-            <li><a href="hw4.html">#HW4</a></li>
-            <li><a href="hw5.html">#HW5 - Web Design Principles</a></li>
-            <li><a href="hw6.html">#HW6 - CSS & Box Model</a></li>
-            <li><a href="hw7.html">#HW7 - Navigation & Mobile Design</a></li>
-        </ul>
-    </div>
+        <section class="section" id="homeworks">
+            <div class="section-heading">
+                <div>
+                    <h2>Homework Pages</h2>
+                    <p>All ECC006 homework pages from HW1 to HW10 are collected here.</p>
+                </div>
+            </div>
 
-    <div class="section">
-        <h2>Download Assignments</h2>
-        <ul>
-            <li><a href="hw2.docx" download>Download HW2</a></li>
-    <li><a href="hw3.docx" download>Download HW3</a></li>
-    <li><a href="hw4.docx" download>Download HW4</a></li>
-    <li><a href="hw5.docx" download>Download HW5</a></li>
-    <li><a href="hw6.docx" download>Download HW6</a></li>
-    <li><a href="hw7.docx" download>Download HW7</a></li>
-        </ul>
-    </div>
+            <ul class="assignment-list">
+                <li><a href="hw1.html">HW1 <span>Introduction</span></a></li>
+                <li><a href="hw2.html">HW2 <span>Blog and research</span></a></li>
+                <li><a href="hw3.html">HW3 <span>CSS and HTML errors</span></a></li>
+                <li><a href="hw4.html">HW4 <span>CSS basics</span></a></li>
+                <li><a href="hw5.html">HW5 <span>Web design principles</span></a></li>
+                <li><a href="hw6.html">HW6 <span>CSS and box model</span></a></li>
+                <li><a href="hw7.html">HW7 <span>Navigation and mobile design</span></a></li>
+                <li><a href="hw8.html">HW8 <span>Tables and analysis</span></a></li>
+                <li><a href="hw9.html">HW9 <span>Music survey form</span></a></li>
+                <li><a href="hw10.html">HW10 <span>E-commerce survey</span></a></li>
+            </ul>
+        </section>
 
+        <section class="section" id="downloads">
+            <div class="section-heading">
+                <div>
+                    <h2>Download Assignments</h2>
+                    <p>Original assignment documents and PDFs are available for download.</p>
+                </div>
+            </div>
+
+            <ul class="assignment-list">
+                <li><a href="hw2.docx" download>HW2 DOCX <span>Download</span></a></li>
+                <li><a href="hw3.docx" download>HW3 DOCX <span>Download</span></a></li>
+                <li><a href="hw4.docx" download>HW4 DOCX <span>Download</span></a></li>
+                <li><a href="hw5.docx" download>HW5 DOCX <span>Download</span></a></li>
+                <li><a href="hw6.docx" download>HW6 DOCX <span>Download</span></a></li>
+                <li><a href="hw7.docx" download>HW7 DOCX <span>Download</span></a></li>
+                <li><a href="hw8.pdf" download>HW8 PDF <span>Download</span></a></li>
+                <li><a href="hw9.pdf" download>HW9 PDF <span>Download</span></a></li>
+                <li><a href="hw10.pdf" download>HW10 PDF <span>Download</span></a></li>
+                <li><a href="form9.html">form9.html <span>Required file</span></a></li>
+            </ul>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="grid two">
+                <article class="card">
+                    <h2>Contact</h2>
+                    <p>Name: Ahmet Faruk Sever</p>
+                    <p>Student Number: 20224411</p>
+                    <p>Department: Software Engineering</p>
+                </article>
+                <article class="card">
+                    <h2>Course Portfolio</h2>
+                    <p>The site is designed as a compact personal portfolio for web development homework, with cleaner navigation and a more polished presentation.</p>
+                    <a class="button teal" href="mailto:ahmet.faruk.sever@example.com">Email Me</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page">
+            <p>Ahmet Faruk Sever | Student No: 20224411 | Software Engineering</p>
+        </div>
+    </footer>
 </body>
 </html>
